@@ -60,7 +60,10 @@ public class Counter implements CounterInterface {
             line =  line.replace(line.trim().substring(line.indexOf("/*"), line.indexOf("*/") + 2), " ");
         }
         line = line.trim().replaceAll(" +", " ");
-        String[] classes = line.split(" class | interface ");
+        String mClass = "CLASS".toLowerCase();
+        String mInterface = "INTERFACE".toLowerCase();
+        System.out.println("\\s"+mClass+"\\s|\\s"+mInterface+"\\s");
+        String[] classes = line.split(" "+mClass+" | "+mInterface+" ");
 
         imports = countClass(classes[0]).getLocCountingProperties();
 
@@ -99,12 +102,11 @@ public class Counter implements CounterInterface {
             for (i = 1; i < str.length; i++) {
                 String allClass = str[i];
                 counterFunction = 0;
-                if (allClass.length() > 6) {
-                    while (allClass.contains("(")
-                            && ((allClass.substring(allClass.lastIndexOf("(") - 3, allClass.lastIndexOf("("))).contains("if")
+                if (allClass.length() > 6 && allClass.contains("(")) {
+                    while ((allClass.substring(allClass.lastIndexOf("(") - 3, allClass.lastIndexOf("("))).contains("if")
                             || (allClass.substring(allClass.lastIndexOf("(") - 4, allClass.lastIndexOf("("))).contains("for")
                             || (allClass.substring(allClass.lastIndexOf("(") - 6, allClass.lastIndexOf("("))).contains("while")
-                            || (allClass.substring(allClass.lastIndexOf("(") - 6, allClass.lastIndexOf("("))).contains("catch"))) {
+                            || (allClass.substring(allClass.lastIndexOf("(") - 6, allClass.lastIndexOf("("))).contains("catch")) {
 
                         counterFunction += countFunction(allClass);
                         countedFunctionData.setLocCountingFunction(counterFunction + countedFunctionData.getLocCountingFunction());
@@ -127,7 +129,8 @@ public class Counter implements CounterInterface {
                         && (functionName[functionName.length - 1].trim().equalsIgnoreCase("if")
                         || functionName[functionName.length - 1].trim().equalsIgnoreCase("while")
                         || functionName[functionName.length - 1].trim().equalsIgnoreCase("for")
-                        || functionName[functionName.length - 1].trim().equalsIgnoreCase("catch"))) {
+                        || functionName[functionName.length - 1].trim().equalsIgnoreCase("catch")
+                        || functionName[functionName.length - 1].trim().contains("."))) {
                     continue;
                 }
 
@@ -198,6 +201,3 @@ public class Counter implements CounterInterface {
     }
 
 }
-
-
-// import package; public class A { private static int a; public getA() { System.out.println(this.a); } } class B { }
