@@ -62,7 +62,6 @@ public class Counter implements CounterInterface {
         line = line.trim().replaceAll(" +", " ");
         String mClass = "CLASS".toLowerCase();
         String mInterface = "INTERFACE".toLowerCase();
-        System.out.println("\\s"+mClass+"\\s|\\s"+mInterface+"\\s");
         String[] classes = line.split(" "+mClass+" | "+mInterface+" ");
 
         imports = countClass(classes[0]).getLocCountingProperties();
