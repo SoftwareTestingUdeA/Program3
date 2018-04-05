@@ -1,6 +1,6 @@
-package co.edu.udea.softwaretesting.linesCounter.Reader.Implementations;
+package co.edu.udea.softwaretesting.linescounter.reader.implementations;
 
-import co.edu.udea.softwaretesting.linesCounter.Reader.Interfaces.GitProjectInterface;
+import co.edu.udea.softwaretesting.linescounter.reader.interfaces.GitProjectInterface;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 

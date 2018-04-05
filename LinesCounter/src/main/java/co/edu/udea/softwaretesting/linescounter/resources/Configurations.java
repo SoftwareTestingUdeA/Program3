@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter.Resources;
+package co.edu.udea.softwaretesting.linescounter.resources;
 
 public class Configurations {
 

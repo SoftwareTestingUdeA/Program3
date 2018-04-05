@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter.Models;
+package co.edu.udea.softwaretesting.linescounter.models;
 
 public class CountedFunctionData {
 

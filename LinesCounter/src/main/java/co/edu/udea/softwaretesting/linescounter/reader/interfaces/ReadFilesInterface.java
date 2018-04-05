@@ -1,7 +1,7 @@
-package co.edu.udea.softwaretesting.linesCounter.Reader.Interfaces;
+package co.edu.udea.softwaretesting.linescounter.reader.interfaces;
 
-import co.edu.udea.softwaretesting.linesCounter.Models.ProjectCloned.FileData;
-import co.edu.udea.softwaretesting.linesCounter.Models.ProjectCloned.Project;
+import co.edu.udea.softwaretesting.linescounter.models.projectcloned.FileData;
+import co.edu.udea.softwaretesting.linescounter.models.projectcloned.Project;
 
 import java.io.File;
 import java.io.IOException;

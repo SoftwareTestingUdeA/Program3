@@ -1,10 +1,10 @@
-package co.edu.udea.softwaretesting.linesCounter;
+package co.edu.udea.softwaretesting.linescounter;
 
-import co.edu.udea.softwaretesting.linesCounter.Counter.Implementations.Counter;
-import co.edu.udea.softwaretesting.linesCounter.Counter.Interfaces.CounterInterface;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedClassData;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedData;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedFunctionData;
+import co.edu.udea.softwaretesting.linescounter.counter.implementations.Counter;
+import co.edu.udea.softwaretesting.linescounter.counter.interfaces.CounterInterface;
+import co.edu.udea.softwaretesting.linescounter.models.CountedClassData;
+import co.edu.udea.softwaretesting.linescounter.models.CountedData;
+import co.edu.udea.softwaretesting.linescounter.models.CountedFunctionData;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

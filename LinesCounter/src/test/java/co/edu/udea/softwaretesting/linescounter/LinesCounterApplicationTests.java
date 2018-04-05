@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter;
+package co.edu.udea.softwaretesting.linescounter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

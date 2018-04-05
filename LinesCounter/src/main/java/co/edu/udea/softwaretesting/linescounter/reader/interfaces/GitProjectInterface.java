@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter.Reader.Interfaces;
+package co.edu.udea.softwaretesting.linescounter.reader.interfaces;
 
 import java.io.IOException;
 

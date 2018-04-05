@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter.Models;
+package co.edu.udea.softwaretesting.linescounter.models;
 
 import java.util.ArrayList;
 import java.util.List;

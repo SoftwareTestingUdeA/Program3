@@ -1,4 +1,4 @@
-package co.edu.udea.softwaretesting.linesCounter.Models.ProjectCloned;
+package co.edu.udea.softwaretesting.linescounter.models.projectcloned;
 
 import java.util.List;
 

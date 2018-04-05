@@ -1,16 +1,16 @@
-package co.edu.udea.softwaretesting.linesCounter.Counter.Implementations;
+package co.edu.udea.softwaretesting.linescounter.counter.implementations;
 
-import co.edu.udea.softwaretesting.linesCounter.Counter.Interfaces.CounterInterface;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedClassData;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedData;
-import co.edu.udea.softwaretesting.linesCounter.Models.CountedFunctionData;
-import co.edu.udea.softwaretesting.linesCounter.Models.ProjectCloned.FileData;
-import co.edu.udea.softwaretesting.linesCounter.Models.ProjectCloned.Project;
-import co.edu.udea.softwaretesting.linesCounter.Reader.Implementations.GitProject;
-import co.edu.udea.softwaretesting.linesCounter.Reader.Implementations.ReadFiles;
-import co.edu.udea.softwaretesting.linesCounter.Reader.Interfaces.GitProjectInterface;
-import co.edu.udea.softwaretesting.linesCounter.Reader.Interfaces.ReadFilesInterface;
-import co.edu.udea.softwaretesting.linesCounter.Resources.Configurations;
+import co.edu.udea.softwaretesting.linescounter.counter.interfaces.CounterInterface;
+import co.edu.udea.softwaretesting.linescounter.models.CountedClassData;
+import co.edu.udea.softwaretesting.linescounter.models.CountedData;
+import co.edu.udea.softwaretesting.linescounter.models.CountedFunctionData;
+import co.edu.udea.softwaretesting.linescounter.models.projectcloned.FileData;
+import co.edu.udea.softwaretesting.linescounter.models.projectcloned.Project;
+import co.edu.udea.softwaretesting.linescounter.reader.implementations.GitProject;
+import co.edu.udea.softwaretesting.linescounter.reader.implementations.ReadFiles;
+import co.edu.udea.softwaretesting.linescounter.reader.interfaces.GitProjectInterface;
+import co.edu.udea.softwaretesting.linescounter.reader.interfaces.ReadFilesInterface;
+import co.edu.udea.softwaretesting.linescounter.resources.Configurations;
 
 import java.io.IOException;
 import java.util.ArrayList;
